@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Walter Souza</Authors>
+    <Description>Extension for Flurl.Http to support MessagePack serialization format</Description>
+    <PackageProjectUrl>https://github.com/walter-psjr/Flurl.Http.MsgPack</PackageProjectUrl>
+    <PackageIcon>icon.png</PackageIcon>
+    <RepositoryUrl>https://github.com/walter-psjr/Flurl.Http.MsgPack</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageTags>flurl msgpack</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\assets\icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Flurl.Http" Version="3.0.1" />
+    <PackageReference Include="MessagePack" Version="2.2.85" />
+  </ItemGroup>
+
+</Project>
